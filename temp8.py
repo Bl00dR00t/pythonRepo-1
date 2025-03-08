@@ -6,7 +6,7 @@ def aFunctionThatFetchesAfuckingApi(MakeAfuckingChoice):
     apifetch = f"{baseUrl}/{MakeAfuckingChoice}"
     requestNow = requests.get(apifetch)
     
-    if requestNow.status_code == 200:  # Corrected this line
+    if requestNow.status_code == 200: 
         makereq = requestNow.json()
         return makereq
     else:
